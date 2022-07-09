@@ -1,5 +1,13 @@
 student 1-Subham Panda
 student 2-Shubham Sunil Dandekar
-student 3-Góuráv
-student 4-Mohammad Umair Ali(Not Present)
+student 3-Góuráv 
+student 4-Mohammad Umair Ali(Not Present) [So Subham Panda Done Mohammad Task] 
+student 5-Suraj Kumar
+
+Status Of Assigned Task
+
+student 1-Subham Panda                    [DONE]
+student 2-Shubham Sunil Dandekar
+student 3-Góuráv                          [DONE]
+student 4-Mohammad Umair Ali(Not Present) [Subham Panda Done] 
 student 5-Suraj Kumar
