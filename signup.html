@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
-        body{
+        body {
             width: 100vw;
             height: 100vh;
-            border: 1px solid red;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        #container{
+        #container {
             padding: 0 30px 40px 30px;
             width: 30%;
-            border: 1px solid black;
-            
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: #48C9B0;
         }
 
-        #container > div{
+        #container>div {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
         }
 
-        #container > div > h1{
-            padding: 30px 0;
+        #container>div>h1 {
+            padding: 25px 0 25px 0;
+            color: white;
+            font-weight: 400;
         }
 
-        #container > div > input , #container > div > button {
-            width: 100%;
-            padding: 15px 20px;
+        #container>div>input,
+        #container>div>button {
+            width: 90%;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 3px;
         }
 
-        #container > div > input{
+        #container>div>input {
             margin: 10px 0;
+            outline: none;
         }
 
-        #container > div > button{
+
+        #container>div>button {
             margin: 4px 0;
+            background-color: rgba(0, 0, 0, 0.219);
+            color: white;
+            cursor: pointer;
         }
 
+        #container>div>button:hover {
+            background-color: rgba(0, 0, 0, 0.319);
+        }
+
+
+        @media only screen and (min-width: 600px) and (max-width: 900px) {
+            #container {
+            width: 50%;
+        }
+        }
+
+
+        @media only screen and (min-width: 300px) and (max-width: 600px) {
+            #container {
+            width: 90%;
+        }
+        }
     </style>
 </head>
+
 <body>
     <div id="container">
         <div>
@@ -62,9 +91,25 @@
             <input type="text" id="" placeholder="Full Name">
             <input type="email" id="" placeholder="Email">
             <input type="text" id="" placeholder="Organization">
-            <button>SIGN UP</button>
-            <button>RETURN</button>
+            <button class="b1">SIGN UP</button>
+            <button class="b1">RETURN</button>
         </div>
     </div>
+
+
+    <script>
+        
+        document.querySelectorAll(".b1").forEach(function(el , ind){
+            el.addEventListener("click" , function(){
+                console.log(el , ind)
+                if(ind == 0){
+                    location.href = 'https://google.com';
+                }else{
+                    history.go(-1)
+                }
+            })
+        })
+    </script>
 </body>
+
 </html>
